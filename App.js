@@ -52,7 +52,6 @@ export default function App() {
             <Text style={styles.titulo}>Experiência Profissional</Text>
           </View>
           <View style={styles.card_content}>
-            <Text style={styles.card_content_text}>KUROLE WEB DESIGN</Text>
             <Text style={styles.card_content_text}>DIGITAL INNOVATION ONE</Text>
             <Text style={styles.card_content_text}>ROCKETSEAT</Text>
           </View>
