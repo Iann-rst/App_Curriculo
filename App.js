@@ -5,6 +5,8 @@ import { StyleSheet, Text, View, Image, ScrollView, Alert, TouchableOpacity } fr
 import Icon from 'react-native-vector-icons/Feather';
 import foto from './src/assets/foto.jpg';
 
+import Card from './src/components/Card';
+
 export default function App() {
 
   //Função para mostrar um alerta ao clicar no ícone da rede social
@@ -46,28 +48,20 @@ export default function App() {
         </View>
       </View>
 
-      <View style={styles.card_container}>
-        <View style={styles.card}>
-          <View style={styles.card_header}>
-            <Text style={styles.titulo}>Experiência Profissional</Text>
-          </View>
-          <View style={styles.card_content}>
-            <Text style={styles.card_content_text}>DIGITAL INNOVATION ONE</Text>
-            <Text style={styles.card_content_text}>ROCKETSEAT</Text>
-          </View>
-        </View>
-      </View>
+      <Card titulo="Formação Acadêmica">
+        <Text style={styles.card_content_text}>
+          Ciência da Computação Universidade Federal do Mato Grosso
+        </Text>
+      </Card>
 
-      <View style={styles.card_container}>
-        <View style={styles.card}>
-          <View style={styles.card_header}>
-            <Text style={styles.titulo}>Formação Acadêmica </Text>
-          </View>
-          <View style={styles.card_content}>
-            <Text style={styles.card_content_text}>Ciência da Computação Universidade Federal do Mato Grosso</Text>
-          </View>
-        </View>
-      </View>
+      <Card titulo="Experiências Profissional">
+        <Text style={styles.card_content_text}>
+          Rocketseat
+        </Text>
+        <Text style={styles.card_content_text}>
+          Digital Innovation One
+        </Text>
+      </Card>
     </ScrollView>
   );
 }
@@ -102,31 +96,8 @@ const styles = StyleSheet.create({
     width: '40%',
     marginTop: 10
   },
-  card_container: {
-    width: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 10,
-    marginBottom: 10
-  },
-  card: {
-    width: '60%',
-    borderRadius: 5,
-    borderWidth: 2,
-    borderColor: '#939393',
-    padding: 10,
-    backgroundColor: '#FFF'
-  },
-  card_content: {
-    marginTop: 20,
-  },
-  titulo: {
-    textAlign: 'center',
-    fontWeight: 'bold'
-  },
   card_content_text: {
     color: '#939393',
-    marginBottom: 10,
     textAlign: 'center'
   }
 });
