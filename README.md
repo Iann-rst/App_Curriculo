@@ -1,5 +1,5 @@
 # App_Curriculo
-Criando um aplicativo currículo usando React Native
+Criando um aplicativo currículo usando React Native (Expo Go)
 
 [ScreensShots](#screensshot) | [Tecnologias](#rocket-tecnologias)
 :-------:                | ------:
